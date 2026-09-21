@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FatRab Yazılım</title>
+<meta name="description" data-i18n-attr="content" data-i18n="metaDesc" content="FatRab Yazılım — kişisel ve kurumsal bütçe takibi için masaüstü ve mobil uygulamalar. Verileriniz cihazınızda kalır." />
+<meta name="theme-color" content="#7C3AED" />
+<link rel="icon" href="assets/favicon.png" type="image/png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="FatRab Yazılım" />
+<meta property="og:description" content="Bütçe takibi için masaüstü ve mobil uygulamalar. Veriler cihazda kalır." />
+<meta property="og:image" content="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="" width="36" height="36" />
+    <span>FatRab <strong data-i18n="brandSuffix">Yazılım</strong></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#urunler" data-i18n="navProducts">Ürünler</a>
+    <a href="#ozellikler" data-i18n="navFeatures">Özellikler</a>
+    <a href="#beta" data-i18n="navBeta">Açık Beta</a>
+    <a href="#indir" data-i18n="navDownload">İndir</a>
+    <a href="#iletisim" data-i18n="navContact">İletişim</a>
+  </nav>
+  <div class="lang-switch" role="group" data-i18n-attr="aria-label" data-i18n="langLabel" aria-label="Dil seçimi">
+    <button type="button" data-lang="tr" class="active">TR</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <span class="pill" data-i18n="heroPill">Bağımsız yazılım stüdyosu</span>
+      <h1 data-i18n-html="heroTitle">Paranızı yöneten yazılımlar,<br /><em>verinizi ele geçirmeden.</em></h1>
+      <p class="lead" data-i18n="heroLead">
+        FatRab Yazılım; bütçe, nakit akışı ve muhasebe araçları geliştirir.
+        Finansal kayıtlarınız varsayılan olarak cihazınızda şifreli durur —
+        reklam yok, pazarlama analitiği yok, zorunlu hesap yok.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" id="heroDownload" href="https://github.com/kilicsizoglu/fatrab-budget-tracker-desktop/releases/latest">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 19h16"/></svg>
+          <span data-i18n="btnDownloadWin">Windows için indir</span>
+        </a>
+        <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.fatrab.budget" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M3.6 2.3 13.9 12 3.6 21.7A1.8 1.8 0 0 1 3 20.4V3.6c0-.5.2-1 .6-1.3Zm11.7 7.2 2.6-2.4-9.2-5.2 6.6 7.6Zm0 5 6.6-7.6-6.6-3.7v11.3Zm-9.2 6 9.2-5.2-2.6-2.4-6.6 7.6Z"/></svg>
+          <span>Google Play</span>
+        </a>
+      </div>
+      <p class="hero-meta" id="heroMeta" data-i18n="metaLoading">Son sürüm bilgisi yükleniyor…</p>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="card-stack">
+        <div class="mini-card">
+          <div class="mini-head"><span data-i18n="artBudget">Aylık Bütçe</span><b>%72</b></div>
+          <div class="bar"><i style="width:72%"></i></div>
+          <div class="bar"><i style="width:46%"></i></div>
+          <div class="bar"><i style="width:88%"></i></div>
+        </div>
+        <div class="mini-card alt">
+          <div class="mini-head"><span data-i18n="artCashflow">Nakit Akışı</span><b class="up">+ 12.480</b></div>
+          <svg class="spark" viewBox="0 0 220 64" preserveAspectRatio="none">
+            <polyline points="0,52 28,44 56,48 84,30 112,34 140,18 168,24 196,10 220,14" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div><b>2</b><span data-i18n="stripPlatforms">platform</span></div>
+    <div><b>40</b><span data-i18n="stripLangs">dil desteği</span></div>
+    <div><b>AES-256</b><span data-i18n="stripCrypto">yerel şifreleme</span></div>
+    <div><b>0</b><span data-i18n="stripAds">reklam SDK</span></div>
+  </section>
+
+  <section id="urunler" class="section">
+    <h2 data-i18n="productsTitle">Ürünler</h2>
+    <p class="section-sub" data-i18n="productsSub">Aynı finansal çekirdek, iki platform. İsterseniz kendi sunucunuz üzerinden eşitleyin.</p>
+
+    <div class="products">
+
+      <article class="product">
+        <div class="product-top">
+          <div class="product-icon desktop">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H3z"/><path d="M8 20h8m-4-4v4"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="deskName">FatRab Bütçe Takip — Masaüstü</h3>
+            <p class="product-kicker" data-i18n="deskKicker">Windows · Tauri tabanlı, hafif ve çevrimdışı</p>
+          </div>
+        </div>
+        <p class="product-desc" data-i18n="deskDesc">
+          Genel muhasebe, envanter, mutabakat, portföy ve finansal tablolar. Kurumsal seviyede
+          hesap planı ve raporlama; veriler bilgisayarınızdan çıkmaz.
+        </p>
+        <ul class="ticks">
+          <li data-i18n="deskTick1">Genel muhasebe defteri ve dönem kilidi</li>
+          <li data-i18n="deskTick2">Envanter, mutabakat ve portföy modülleri</li>
+          <li data-i18n="deskTick3">Kural motoru ile toplu yeniden kodlama</li>
+        </ul>
+        <div class="release-box">
+          <div class="release-line">
+            <span class="dot"></span>
+            <span id="releaseTitle" data-i18n="releaseLoading">Son sürüm getiriliyor…</span>
+          </div>
+          <div class="release-actions">
+            <a class="btn btn-primary btn-sm" id="dlSetup" href="https://github.com/kilicsizoglu/fatrab-budget-tracker-desktop/releases/latest" data-i18n="btnSetup">Kurulum (.exe)</a>
+            <a class="btn btn-soft btn-sm" id="dlMsi" href="https://github.com/kilicsizoglu/fatrab-budget-tracker-desktop/releases/latest" data-i18n="btnMsi">MSI paketi</a>
+            <a class="btn btn-link btn-sm" id="dlNotes" href="https://github.com/kilicsizoglu/fatrab-budget-tracker-desktop/releases" target="_blank" rel="noopener" data-i18n="btnAllReleases">Tüm sürümler →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-top">
+          <div class="product-icon mobile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="mobName">FatRab Bütçe Takipçisi — Android</h3>
+            <p class="product-kicker">Google Play · com.fatrab.budget</p>
+          </div>
+        </div>
+        <p class="product-desc" data-i18n="mobDesc">
+          Günlük harcama girişi, bütçe uyarıları, borç ve ödeme planı, çoklu profil,
+          QR veya Wi-Fi ile cihazdan cihaza yedek aktarımı. 40 dilde arayüz.
+        </p>
+        <ul class="ticks">
+          <li data-i18n="mobTick1">Şifreli yerel depolama (AES-256) ve PIN kilidi</li>
+          <li data-i18n="mobTick2">Bildirim panelinden hızlı harcama girişi</li>
+          <li data-i18n="mobTick3">Sesli dikte ve fiş fotoğrafından giriş</li>
+        </ul>
+        <div class="release-box">
+          <div class="release-line">
+            <span class="dot green"></span>
+            <span data-i18n="mobLive">Google Play’de yayında</span>
+          </div>
+          <div class="release-actions">
+            <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.fatrab.budget" target="_blank" rel="noopener" data-i18n="btnOpenPlay">Google Play’de aç</a>
+            <a class="btn btn-link btn-sm" href="https://docs.google.com/forms/d/e/1FAIpQLSdx4En4NGD1e1rI2bEA-7ZLpeVcdIArWo70p9AQ0FSiqSCVsQ/viewform" target="_blank" rel="noopener" data-i18n="btnJoinBetaShort">Açık betaya katıl →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="ozellikler" class="section">
+    <h2 data-i18n="featuresTitle">Neden FatRab?</h2>
+    <p class="section-sub" data-i18n="featuresSub">Finansal yazılımda üç temel ilkemiz var: gizlilik, çevrimdışı çalışma, gerçek muhasebe.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="f-icon">🔒</div>
+        <h4 data-i18n="f1t">Veri cihazda kalır</h4>
+        <p data-i18n="f1d">Kayıtlarınız şifreli olarak cihazınızda tutulur. Eşitleme isteğe bağlıdır ve kendi sunucunuza yapılır.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">📴</div>
+        <h4 data-i18n="f2t">Çevrimdışı çalışır</h4>
+        <p data-i18n="f2d">İnternet olmadan da tam işlevsel. Bulut zorunluluğu yok, temel özellikler kilitli değil.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">🧾</div>
+        <h4 data-i18n="f3t">Ciddi muhasebe</h4>
+        <p data-i18n="f3d">Basit harcama listesinden fazlası: hesap planı, mutabakat, envanter ve finansal tablolar.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">🌍</div>
+        <h4 data-i18n="f4t">40 dil, çoklu para birimi</h4>
+        <p data-i18n="f4d">Arayüz 40 dilde; döviz ve kripto kurlarıyla çoklu para birimi takibi.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">🔁</div>
+        <h4 data-i18n="f5t">Cihazlar arası aktarım</h4>
+        <p data-i18n="f5d">QR kod veya yerel Wi-Fi üzerinden doğrudan cihazdan cihaza yedek aktarımı.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">🚫</div>
+        <h4 data-i18n="f6t">Reklamsız</h4>
+        <p data-i18n="f6d">Reklam SDK’sı ve pazarlama analitiği yok. Yalnızca anonim çökme raporlaması.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beta" class="section">
+    <div class="beta">
+      <div class="beta-text">
+        <span class="pill beta-pill" data-i18n="betaPill">Açık Beta</span>
+        <h2 data-i18n="betaTitle">Yeni sürümleri herkesten önce deneyin</h2>
+        <p class="section-sub" data-i18n="betaSub">
+          Açık beta programına katılın: geliştirme aşamasındaki özellikleri erken kullanın,
+          geri bildiriminizle uygulamanın yönünü belirleyin. Katılım ücretsizdir ve
+          istediğiniz zaman ayrılabilirsiniz.
+        </p>
+        <ul class="ticks beta-ticks">
+          <li data-i18n="betaTick1">Yayınlanmamış özelliklere erken erişim</li>
+          <li data-i18n="betaTick2">Hata bildirimleriniz doğrudan geliştiriciye ulaşır</li>
+          <li data-i18n="betaTick3">Formu doldurmanız yeterli, ek kurulum yok</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdx4En4NGD1e1rI2bEA-7ZLpeVcdIArWo70p9AQ0FSiqSCVsQ/viewform" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11h6M9 15h6M9 7h3"/><path d="M6 3h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/></svg>
+            <span data-i18n="btnJoinBeta">Beta başvuru formunu doldur</span>
+          </a>
+        </div>
+        <p class="fineprint" data-i18n="betaNote">Form Google Forms üzerinde açılır. Yalnızca iletişim ve cihaz bilgisi sorulur; finansal veriniz istenmez.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="indir" class="section download">
+    <div class="download-inner">
+      <h2 data-i18n="dlTitle">Hemen başlayın</h2>
+      <p class="section-sub" data-i18n="dlSub">Masaüstü sürümü ücretsiz indirin, mobil uygulamayı Play Store’dan kurun.</p>
+      <div class="cta-row center">
+        <a class="btn btn-primary btn-lg" id="footDownload" href="https://github.com/kilicsizoglu/fatrab-budget-tracker-desktop/releases/latest">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 19h16"/></svg>
+          <span id="footDownloadText" data-i18n="btnDownloadWin">Windows için indir</span>
+        </a>
+        <a class="btn btn-dark btn-lg" href="https://play.google.com/store/apps/details?id=com.fatrab.budget" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M3.6 2.3 13.9 12 3.6 21.7A1.8 1.8 0 0 1 3 20.4V3.6c0-.5.2-1 .6-1.3Zm11.7 7.2 2.6-2.4-9.2-5.2 6.6 7.6Zm0 5 6.6-7.6-6.6-3.7v11.3Zm-9.2 6 9.2-5.2-2.6-2.4-6.6 7.6Z"/></svg>
+          <span>Google Play</span>
+        </a>
+      </div>
+      <p class="fineprint" data-i18n="dlFine">Windows 10/11 · 64-bit · yaklaşık 26 MB kurulum dosyası</p>
+    </div>
+  </section>
+
+  <section id="iletisim" class="section contact">
+    <h2 data-i18n="contactTitle">İletişim</h2>
+    <p class="section-sub" data-i18n="contactSub">Hata bildirimi, öneri ve iş birliği için yazın.</p>
+    <div class="contact-links">
+      <a class="contact-card highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSclJdZ0oVmXbocobGfJXwlkYn-q41plsSQivWcK3VAOW_1HDw/viewform" target="_blank" rel="noopener">
+        <b data-i18n="contactBugForm">Hata bildir</b><span data-i18n="contactBugFormSub">Hata raporlama formu</span>
+      </a>
+      <a class="contact-card highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSeCyH8qUixASzzMRZYIxHvt887_ABZfjRGThAh85l8Qr3lTRA/viewform" target="_blank" rel="noopener">
+        <b data-i18n="contactFeatureForm">Özellik / Öneri iste</b><span data-i18n="contactFeatureFormSub">Yeni özellik talep formu</span>
+      </a>
+      <a class="contact-card" href="mailto:kilicsizoglu@gmail.com">
+        <b data-i18n="contactMail">E-posta</b><span>kilicsizoglu@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/kilicsizoglu" target="_blank" rel="noopener">
+        <b>GitHub</b><span>github.com/kilicsizoglu</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="assets/logo.png" alt="" width="28" height="28" />
+    <span data-i18n="footBrand">FatRab Yazılım</span>
+  </div>
+  <p class="copy">© <span id="year">2026</span> <span data-i18n="footCopy">FatRab Yazılım · Tüm hakları saklıdır.</span></p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
